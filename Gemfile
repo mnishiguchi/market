@@ -44,12 +44,13 @@ group :development do
 end
 
 group :test do
-  gem 'minitest-power_assert'
-  gem 'minitest-rails'
-  gem 'minitest-reporters'
   gem 'shoulda-context'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
+  gem 'minitest-power_assert'
+  gem 'minitest-rails'
+  gem 'minitest-reporters'
+  gem 'mocha'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

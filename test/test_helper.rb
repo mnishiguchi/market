@@ -5,6 +5,7 @@ ENV["RAILS_ENV"] = "test"
 require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
 require "minitest/rails"
+require "mocha/mini_test"
 
 # Minitest-reporters is a progress-bar-style reporter by default
 # but we can alternatively use a document-style reporter.
