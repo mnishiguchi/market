@@ -4,6 +4,8 @@ class ApiConstraints
     @default = options[:default]
   end
 
+  # Triggered by the router for the constraint.
+  # Checks if the default version is required or the Accept header matches the given string.
   def matches?(req)
     @default || req.headers['Accept'].include?("application/vnd.market.v#{@version}")
   end
