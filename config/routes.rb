@@ -12,7 +12,8 @@ Rails.application.routes.draw do
     # URL: `http://api.example.com/v1/products/1`
     scope module: :v1,
           constraints: ApiConstraints.new(version: 1, default: true) do
-      
+
+      resources :users, only: [:show, :create, :update, :destroy]
     end
   end
 end
